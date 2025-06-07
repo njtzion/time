@@ -1,12 +1,8 @@
-import React from 'react';
-
-const Home = () => {
+export default function Home() {
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold text-center">Welcome to AI Stock Recommendation Dashboard</h1>
-      <p className="text-center text-gray-600 mt-2">Monitor portfolio, scores, and get AI-driven buy/target/SL tips.</p>
+    <div className="text-center mt-10">
+      <h1 className="text-3xl font-bold">📊 Welcome to the AI Stock Dashboard</h1>
+      <p className="mt-2 text-gray-600">Track your portfolio, scores, and get buy/sell tips.</p>
     </div>
   );
-};
-
-export default Home;
+}

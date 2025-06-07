@@ -1,21 +1,8 @@
-import React, { useEffect } from 'react';
-
-const Callback = () => {
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const code = params.get('code');
-    if (code) {
-      // This is where the Fyers auth code would be handled
-      console.log('Authorization code:', code);
-    }
-  }, []);
-
+export default function Callback() {
   return (
-    <div className="p-4 text-center">
-      <h2 className="text-xl font-semibold">Redirecting...</h2>
-      <p>Please wait while we complete authentication.</p>
+    <div className="text-center mt-20">
+      <h1 className="text-xl font-bold">🔄 Authenticating via Fyers...</h1>
+      <p className="text-gray-600 mt-2">Please wait while we process your login.</p>
     </div>
   );
-};
-
-export default Callback;
+}
